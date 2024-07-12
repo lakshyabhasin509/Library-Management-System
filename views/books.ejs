@@ -1,0 +1,32 @@
+<%- include("header.ejs") -%>
+<style>
+    .row{
+        margin: auto !important;
+    }
+</style>
+<% if(docs != ''){ %>
+<h2 class="pb-2 border-bottom text-center">Books</h2>
+<div class="row w-75">
+    <% for(let i=0; i < docs.length ; i++) { %>
+    <div class="col-sm-4 p-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Title : <%= docs[i].name %></h5>
+                <p class="card-text">ISBN : <%= docs[i].isbn %></p>
+                <p class="card-text">Author : <%= docs[i].author %></p>
+                <p class="card-text">quantity : <%= docs[i].quantity %></p>
+                <form action="/books/delete" method="post">
+                    <input type="hidden" name="isbn" value="<%= docs[i].isbn %>">
+                    <button class="btn btn-primary">Remove</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <% } %>
+</div>
+<% } else { %>
+<h1 class="text-center">No Books in Library</h1>
+<% } %>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+[
+    {
+        "isbn": "wt345",
+        "name": "Oliver Twist",
+        "author": "Charles Dickens",
+        "quantity": "3"
+    },
+    {
+        "isbn": "jk654",
+        "name": "Hard Times",
+        "author": "Charles Dickens",
+        "quantity": "54"
+    },
+    {
+        "isbn": "po789",
+        "name": "Hamlet",
+        "author": "William Shakespeare",
+        "quantity": "1"
+    },
+    {
+        "isbn": "yu098",
+        "name": "IT",
+        "author": "Haruki Murakami",
+        "quantity": "0"
+    },
+    {
+        "isbn": "hj846",
+        "name": "Norwegian Wood",
+        "author": "Haruki Murakami",
+        "quantity": "6"
+    },
+    {
+        "isbn": "op012",
+        "name": "Kafka on the Shore",
+        "author": "Haruki Murakami",
+        "quantity": "32"
+    }
+]
